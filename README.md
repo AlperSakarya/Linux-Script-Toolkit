@@ -1,6 +1,8 @@
 # Linux Script Toolkit
 The Linux Script Toolkit is a collection of useful scripts designed to streamline network and system diagnostics on Linux servers. It includes tools for diagnosing network latency with Curl-Latency-Diagnoser, monitoring connection states and potential socket exhaustion with Linux-Connection-State, and analyzing web server access logs with Access-Log-Analyzer.
 
+<br><br>
+
 ## Curl-Latency-Diagnoser
 Combination of curl options for diagnosing application latency behavior over networks
 
@@ -17,6 +19,7 @@ Combination of curl options for diagnosing application latency behavior over net
 - Print results to a file(latency-results.txt) for future usage in one second loops:<br>
 ```while true; do echo -n `date`; curl -sLo /dev/null -w@latency-print.txt google.com ; sleep 1; done | tee latency-results.txt```
 
+<br><br>
 
 ## Linux-Connection-State
 Useful netstat command with handful of options for live monitoring a Linux instance for socket exhaustion and related issues
@@ -29,6 +32,7 @@ Useful netstat command with handful of options for live monitoring a Linux insta
 - Issue command below to run it:<br>
 ```bash conection-state.sh```
 
+<br><br>
 
 ## Access-Log-Analyzer
 Analyzing the number of hits of your web application per IP 
